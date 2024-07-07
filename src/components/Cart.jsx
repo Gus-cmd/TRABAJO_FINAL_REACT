@@ -25,7 +25,7 @@ const Cart = ({ show, handleClose }) => {
                 <div className="d-flex justify-content-between align-items-center">
                   <div>
                     <h5>{item.nombre}</h5>
-                    <p>${item.precio.toFixed(2)}</p>
+                    <p>S/.{item.precio.toFixed(2)}</p>
                     <p>Cantidad: {item.quantity}</p>
                   </div>
                   <div>
@@ -49,9 +49,9 @@ const Cart = ({ show, handleClose }) => {
           </ListGroup>
         )}
         <div className="mt-3">
-          <h5>Total: ${total.toFixed(2)}</h5>
-          <h5>Descuento (10%): -${discount.toFixed(2)}</h5>
-          <h4>Total a Pagar: ${totalToPay.toFixed(2)}</h4>
+          <h5>Total: S/.{total.toFixed(2)}</h5>
+          <h5>Descuento (10%): -S/.{discount.toFixed(2)}</h5>
+          <h4>Total a Pagar: S/.{totalToPay.toFixed(2)}</h4>
         </div>
       </Modal.Body>
       <Modal.Footer>
