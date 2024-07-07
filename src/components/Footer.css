@@ -1,0 +1,55 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer .logo {
+  margin-bottom: 10px;
+  width: 80px; /* Aumenta el tamaño del logo */
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer h5 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer .list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer .footer-link {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer .footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #00aced; /* Example hover color */
+}
+
+.footer .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer .text-center {
+  margin-top: 20px;
+}
