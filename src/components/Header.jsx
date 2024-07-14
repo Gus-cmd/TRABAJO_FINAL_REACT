@@ -16,8 +16,8 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#Laptops">Laptops</Nav.Link>
-              <Nav.Link href="#Accesorios">Accesorios</Nav.Link>
+              <Nav.Link href="#laptops">Laptops</Nav.Link>
+              <Nav.Link href="#accesorios">Accesorios</Nav.Link>
               <Nav.Link href="#">Iniciar Sesion</Nav.Link>
             </Nav>
             <Form className="d-flex ms-auto search-form">

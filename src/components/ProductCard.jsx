@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { CartContext } from './CartContext';
+import { css } from '@emotion/react';
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useContext(CartContext);
