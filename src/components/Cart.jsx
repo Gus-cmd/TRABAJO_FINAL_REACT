@@ -4,11 +4,16 @@ import { Button, ListGroup, Modal } from 'react-bootstrap';
 import { FaShoppingCart } from 'react-icons/fa';
 
 const Cart = ({ show, handleClose }) => {
-  const { cart, increaseQuantity, decreaseQuantity } = useContext(CartContext);
+  const { cart, increaseQuantity, decreaseQuantity, clearCart } = useContext(CartContext);
 
   const total = cart.reduce((acc, item) => acc + item.precio * item.quantity, 0);
   const discount = total * 0.1; // 10% de descuento
   const totalToPay = total - discount;
+
+  const handleClearCart = () => {
+    clearCart();
+    handleClose();
+  };
 
   return (
     <Modal show={show} onHide={handleClose}>
@@ -55,7 +60,10 @@ const Cart = ({ show, handleClose }) => {
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>
+        <Button variant="secondary" onClick={handleClearCart}>
+          Limpiar Carrito
+        </Button>
+        <Button variant="primary" onClick={handleClose}>
           Cerrar
         </Button>
       </Modal.Footer>

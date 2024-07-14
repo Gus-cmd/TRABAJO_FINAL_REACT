@@ -43,11 +43,17 @@ const CartProvider = ({ children }) => {
     );
   };
 
+  const clearCart = () => {
+    setCart([]);
+    toast.info('Carrito limpiado 🧹');
+  };
+
   const value = {
     cart,
     addToCart,
     increaseQuantity,
     decreaseQuantity,
+    clearCart,
   };
 
   return (
